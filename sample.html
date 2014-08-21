@@ -1,0 +1,170 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Deejai Yoyages - Home</title>
+<link href="http://localhost/deejaivoyages/css/front/fonts.css" rel="stylesheet" type="text/css" />
+<link href="http://localhost/deejaivoyages/css/front/style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="http://localhost/deejaivoyages/plug-in/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3"></script>
+</head>
+
+<body>
+	<div id="div-header">
+    	<div class="div-head-info">
+        	<div class="div-head-logo">
+            	<a href="http://localhost/deejaivoyages/"><h1>Deejai Voyages</h1></a>
+            </div>
+            <div class="div-head-menu">
+            	<ul>
+                	<li ><a href="http://localhost/deejaivoyages/package">Tous nos<br />chemins mènent<br />à Chiang Mai</a></li>
+                    <li ><a href="http://localhost/deejaivoyages/plan">Chiang Mai<br />Sur Mesure</a></li>
+                    <li ><a href="http://localhost/deejaivoyages/solution">Une certaine<br />idée du<br />Circuit Privé</a></li>
+                    <li ><a href="http://localhost/deejaivoyages/favorite">Nos coups<br />de Cœur</a></li>
+                    <li ><a href="http://localhost/deejaivoyages/gallery">Galeries<br />Photos</a></li>
+                    <li ><a href="http://localhost/deejaivoyages/contact">ConTact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- Fancy box -->
+<link href="http://localhost/deejaivoyages/plug-in/fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="http://localhost/deejaivoyages/plug-in/fancybox/source/jquery.fancybox.pack.js"></script>
+<script language="javascript" type="text/javascript" src="http://localhost/deejaivoyages/js/front/fancybox.js"></script>
+
+<!-- jssor slides -->
+<script language="javascript" type="text/javascript" src="http://localhost/deejaivoyages/plug-in/jssor/jssor.slider.min.js"></script>
+<script language="javascript" type="text/javascript">
+	jQuery(document).ready(function ($) {
+		var options = {
+			$AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+			$AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+			$SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+			$DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+			$ThumbnailNavigatorOptions: {
+				$Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+				$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+				$Loop: 2,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+				$SpacingX: 3,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+				$SpacingY: 3,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+				$DisplayPieces: 3,                              //[Optional] Number of pieces to display, default value is 1
+				$ParkingPosition: 204                          //[Optional] The offset position to park thumbnail,
+			}
+		};
+
+		var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+		//responsive code begin
+		//you can remove responsive code if you don't want the slider scales while window resizes
+		function ScaleSlider() {
+			var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+			if (parentWidth)
+				jssor_slider1.$SetScaleWidth(Math.min(parentWidth, 1400));
+			else
+				window.setTimeout(ScaleSlider, 30);
+		}
+
+		ScaleSlider();
+
+		if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+			$(window).bind('resize', ScaleSlider);
+		}
+
+
+		//if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+		//    $(window).bind("orientationchange", ScaleSlider);
+		//}
+		//responsive code end
+	});
+</script>
+
+<style type="text/css">
+
+img.i {
+	border-radius:50px !important;
+	border:rgba(255,255,255,0.7) 10px solid;
+}
+
+div.pav > img.i {
+	border-radius:50px !important;
+	border:rgba(183,140,10,0.7) 10px solid;
+}
+
+div.o {
+	border:none !important;
+}
+</style>
+<!-- Style sheet of page -->
+<link href="http://localhost/deejaivoyages/css/front/home.css" rel="stylesheet" type="text/css" />
+
+<div id="div-home-content">
+	<div id="div-slide-container">
+        <div id="slider1_container" style="position: relative; width: 1400px;
+            height: 702px; overflow: hidden;">
+    
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                    background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                </div>
+                <div style="position: absolute; display: block; background: url(http://localhost/deejaivoyages/images/loading.gif) no-repeat center center;
+                    top: 0px; left: 0px;width: 100%;height:100%;">
+                </div>
+            </div>
+    
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: pointer; position: absolute; left: 0px; top: 0px; width: 1400px; height: 702px;
+                overflow: hidden;">
+                            <div>
+                    <img u="image" src="http://localhost/deejaivoyages/resources/slide/medium_slide_20140707104250_slide_home_01.png" />
+                    <img u="thumb" src="http://localhost/deejaivoyages/resources/slide/small_slide_20140707104250_slide_home_01.png" />
+                </div>
+                            <div>
+                    <img u="image" src="http://localhost/deejaivoyages/resources/slide/medium_slide_20140804094513_Chiang_Mai_copy.jpg" />
+                    <img u="thumb" src="http://localhost/deejaivoyages/resources/slide/small_slide_20140804094513_Chiang_Mai_copy.jpg" />
+                </div>
+                            <div>
+                    <img u="image" src="http://localhost/deejaivoyages/resources/slide/medium_slide_20140804105335_Phuket_Balayi_Turlari_com_11.jpg" />
+                    <img u="thumb" src="http://localhost/deejaivoyages/resources/slide/small_slide_20140804105335_Phuket_Balayi_Turlari_com_11.jpg" />
+                </div>
+                        </div>
+            
+            <!-- Thumbnail Navigator Skin Begin -->
+            <div u="thumbnavigator" class="jssort07" style="position: absolute; width: 1400px; height: 100px; left: 0px; bottom: 0px; overflow: hidden; ">
+                <!-- div style=" background-color: #000; filter:alpha(opacity=30); opacity:.3; width: 100%; height:100%;"></div -->
+                <!-- Thumbnail Item Skin Begin -->
+                <div u="slides" style="cursor: pointer;">
+                    <div u="prototype" class="p" style="POSITION: absolute; WIDTH: 76px; HEIGHT: 76px; TOP: 0; LEFT: 0;">
+                        <thumbnailtemplate class="i" style="position:absolute;"></thumbnailtemplate>
+                        <div class="o">
+                        </div>
+                    </div>
+                </div>
+                <!-- Thumbnail Item Skin End -->
+            </div>
+            <!-- ThumbnailNavigator Skin End -->
+        </div>
+   	</div>
+</div>
+<div id="div-side-tab">
+    <a href="http://localhost/deejaivoyages/contactfrm" class="a-popup">soumettre</a>
+    <a href="http://localhost/deejaivoyages/testimonial" class="a-popup">Témoignages</a>
+    <a href="http://localhost/deejaivoyages/faq" class="a-popup">Ce qu’il faut savoir</a>
+</div>	<div id="div-footer">
+    	<div class="div-footer-menu">
+            <ul>
+                <li><a href="http://localhost/deejaivoyages/package">Tous nos<br />chemins mènent<br />à Chiang Mai</a></li>
+                <li><a href="http://localhost/deejaivoyages/plan">Chiang Mai<br />Sur Mesure</a></li>
+                <li><a href="http://localhost/deejaivoyages/solution">Une certaine<br />idée du<br />Circuit Privé</a></li>
+                <li><a href="">Nos coups<br />de Cœur</a></li>
+                <li><a href="">Galeries<br />Photos</a></li>
+            </ul>
+            <div style="clear:both;"></div>
+            <p class="p-credit">Copyright &copy; 2014 Deejai Voyages. All rights reserved. Designed and developed by <a href="http://www.dgzoo.com/" target="_blank">Digital Zoo</a></p>
+        </div>
+    </div>
+</body>
+</html>
