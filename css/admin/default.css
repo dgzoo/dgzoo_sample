@@ -1,0 +1,327 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+*, html	{ 
+	margin:0px; 
+	padding:0px;
+	outline:none;
+}
+
+html	{
+	overflow-x:hidden; 
+	overflow-y:scroll; 
+}
+
+@font-face {
+    font-family: 'dinbekregular';
+    src: url('../../font/dinbek-webfont.eot');
+    src: url('../../font/dinbek-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/dinbek-webfont.woff') format('woff'),
+         url('../../font/dinbek-webfont.ttf') format('truetype'),
+         url('../../font/dinbek-webfont.svg#dinbekregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body	{ 
+	margin:0px; 
+	padding:0px; 
+	font-family:"Trebuchet MS", Verdana;
+	font-size:12px; 
+	background:#fff; 
+	color:#000; 
+}
+
+a:link 		{ color: #000; text-decoration: none; }
+a:visited 	{ color: #000; text-decoration: none;  }
+a:hover 	{ color: #0076a3; text-decoration: underline; }
+a:active 	{ color: #000; text-decoration: none;  }
+a img 		{ border:none; }
+
+h3	{ 
+	margin-top:15px; 
+	padding:10px 15px 10px 15px;
+	font-size:18px; 
+	font-weight:normal;
+	background-color:#d7d7d7;
+}
+h3 img	{
+	vertical-align:middle;
+}
+
+img	{
+	vertical-align:text-bottom;
+	border:none;
+}
+
+
+/* MENU
+__________________________________________________ */
+
+#mainmenu	{
+	margin:auto;
+	width:964px;
+	padding:8px;
+	border-bottom:1px solid #d7d7d7;
+}
+
+
+/* NAVIGATION
+__________________________________________________ */
+
+#nav	{
+	margin:auto;
+	padding:6px 8px 6px 8px;
+	width:964px;
+	border-bottom:1px dashed #d7d7d7;
+	color:#999;
+}
+#nav a	{ color:#999; }
+
+.ul-lang li {
+	display:inline-block;
+	padding:0 15px 0 40px;
+}
+
+.ul-lang .active a{
+	color:#000;
+}
+
+/* CONTENT
+__________________________________________________ */
+
+#content	{
+	margin:auto;
+	padding:10px 0px 40px 0px;
+	width:980px;
+}
+
+/* Status */
+#content .err,
+#content .success	{
+	padding:10px;
+	margin-bottom:10px;
+	font:bold 14px dinbekregular;
+	color:#f26c4f;
+	border:1px solid #f26c4f;
+}
+#content .success	{
+	color:#55bb55 !important;
+	border:1px solid #55bb55 !important;
+}
+#content .err img,
+#content .success img	{
+	vertical-align:text-bottom;
+}
+
+
+/* FORM
+__________________________________________________ */
+
+.but 	{ 
+	padding:10px 25px 10px 25px; 
+	font:normal 18px "Trebuchet MS", Verdana;
+	background:#af7a00; 
+	color:#000;
+	border:none; 
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	cursor:pointer;
+}
+.but:hover	{
+	opacity:0.9;
+}
+.butsort 	{ 
+	font-size:12px;
+	text-transform:uppercase;
+}
+.box 		{ 
+	padding:10px; 
+	font:normal 12px "Trebuchet MS", Verdana;
+	width:700px;
+	border:1px solid #ccc;
+	resize:none;
+}
+.boxcolor	{ 
+	width:170px !important;
+	text-align:center !important;
+}
+.boxsort	{ 
+	padding:2px !important;
+	width:20px !important;
+	font-size:11px !important;
+	text-align:center !important;
+}
+.boxsearch	{
+	margin-right:3px;
+	padding-left:36px;
+	width:200px;
+	background:url(../../images/admin/tools/search.png) no-repeat left center;
+}
+
+
+/* TABLE
+__________________________________________________ */
+
+.tdtp		{ font-weight:bold; }
+.thmain		{ 
+	padding:15px 10px 10px 10px;
+	font:normal 16px "Trebuchet MS", Verdana;
+	text-align:left;
+	border-bottom:1px dashed #ccc;
+}
+
+
+/* CONTENT - MENU
+__________________________________________________ */
+
+.contentmenu	{
+	padding:20px 10px 15px 10px;
+	font:normal 18px "Trebuchet MS", Verdana;
+	letter-spacing:1px;
+	border-bottom:1px solid #e7e7e7;
+	text-transform:capitalize;
+}
+.contentmenu img	{
+	vertical-align:middle;
+}
+.contentmenu .cmnselect	{
+	font-weight:bold;
+	color: #0076a3;
+}
+
+
+/* CONTENT - LIST
+__________________________________________________ */
+
+#content .contentlist	{
+	margin:auto;
+	width:980px;
+}
+.contentlist .trc:hover	{
+	background:#f2f2f2;
+}
+.contentlist th	{
+	padding:10px 5px 10px 5px;
+}
+.contentlist td	{
+	padding:10px 5px 10px 5px;
+	vertical-align:top;
+	border-bottom:1px dashed #e7e7e7;
+}
+.contentlist .listtitle	{
+	padding:20px 10px 15px 10px !important;
+	vertical-align:middle !important;
+	border:none !important;
+}
+.contentlist a	{
+	color:#0076a3;
+}
+
+/* Gallery */
+.contentlist .gallerylist	{
+	float:left;
+	padding:0px 5px 0px 5px;
+	width:150px;
+	height:200px;
+}
+.gallerylist p	{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+/* Pagination */
+#content .pagenum	{
+	padding:15px 10px 10px 10px;
+}
+
+
+/* CONTENT - INFO
+__________________________________________________ */
+
+#content .contentinfo	{
+	width:940px;
+	margin:auto;
+}
+.contentinfo td	{
+	padding:10px;
+	border-bottom:1px dashed #e7e7e7;
+}
+.contentinfo tr:last-child td	{
+	border:none !important;
+}
+.contentinfo a	{
+	color:#0076a3;
+}
+.contentinfo .contenttitle	{
+	padding:25px 10px 10px 10px;
+	font:bold 18px "Trebuchet MS", Verdana;
+	text-transform:uppercase;
+	border-bottom:1px solid #ccc;
+}
+.contentinfo .contenttitle img	{
+	margin-right:8px;
+	vertical-align:text-bottom;
+}
+.contentinfo .tip	{
+	line-height:18px;
+	font-size:11px;
+	color:#999;
+}
+
+/* UPLOADIFIVE STYLE
+-------------------------------------------------- */
+.uploadifive-button {
+	background-color: #aaa;
+	background-position: center top;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #808080;
+	color: #FFF;
+	font-size: 12px;
+	font-weight:400;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	text-transform: uppercase;
+	width: 100%;
+	cursor:pointer;
+}
+.uploadifive-button:hover {
+	background-color: #ccc;
+}
+#uploadifive-inputPicture-queue .uploadifive-queue-item {
+	background-color: #F5F5F5;
+	border-bottom: 1px dotted #D5D5D5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font: 12px Arial, Helvetica, Sans-serif;
+	margin-top: 3px;
+	padding: 15px;
+}
+.uploadifive-queue-item .close {
+	background: url('uploadifive-cancel.png') 0 0 no-repeat;
+	display: block;
+	float: right;
+	height: 16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+.uploadifive-queue-item .progress {
+	border: 1px solid #D0D0D0;
+	height: 3px;
+	margin-top: 5px;
+	width: 100%;
+}
+.uploadifive-queue-item .progress-bar {
+	background-color: #0072BC;
+	height: 3px;
+	width: 0;
+}
+
+/* CLEAR
+__________________________________________________ */
+
+.clearline	{
+	clear:both;
+}
